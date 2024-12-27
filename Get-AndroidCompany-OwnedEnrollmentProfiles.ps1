@@ -51,7 +51,7 @@ $accessToken = Get-Token -clientId $clientId -clientSecret $clientSecret -tenant
 
 #creating header of API
 $header = @{
-    "Authorization" = "Bearer $($accessToken.access_token)"
+    "Authorization" = "Bearer $($accessToken)"
     "Content-type"  = "application/json"
 }
 
